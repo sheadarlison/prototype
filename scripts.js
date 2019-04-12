@@ -33,9 +33,11 @@ function brandingOff() {
 	if (document.getElementById("logo").src == "https://s3.amazonaws.com/Rise-Images/UI/logo.svg") {
 		document.getElementById('logo').src = "https://storage.googleapis.com/risemedialibrary-7fa5ee92-7deb-450b-a8d5-e5ed648c575f/YourLogo.png";
 		document.getElementById('brandText').style.color = 'rgb(77,77,77)';
+		document.getElementById('htmlTemplate').style.backgroundColor = 'rgb(230, 100, 101)';
 	}
 	if (document.getElementById("logo").src == "https://www.risedisplay.com/wp-content/uploads/2017/08/rise-logo.png") {
 		document.getElementById('brandText').style.color = 'rgb(77,77,77)';
+		document.getElementById('htmlTemplate').style.backgroundColor = 'rgb(230, 100, 101)';
 	}
 }
 
