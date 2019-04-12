@@ -237,6 +237,20 @@ i {
 	margin: 0;
 }
 
+#component-list {
+	display: none;
+	position: fixed;
+	left: 1vw;
+	top: 22.5vh;
+	width: 24vw;
+}
+
+.brand-settings-button {
+	border-bottom: solid 1px #d3d3d3;
+	padding-bottom: 15px; 
+	margin-top: 0px;
+}
+
 /*Preview */
 
 .preview {
@@ -256,9 +270,13 @@ i {
 	height: 69vh;
 	width: 70vw;
 	right: 1.5vw;
-	background-image: url("https://storage.googleapis.com/risemedialibrary-7fa5ee92-7deb-450b-a8d5-e5ed648c575f/%5BUpdates%5D%20Geneseo/build/images/geneseo-background-revised.png");
+	background: #ffffff;
 	background-position: center;
 	border: 1px solid #d3d3d3;
+}
+
+#htmlTemplate {
+	background: rgb(230, 100, 101);
 }
 
 #logo {

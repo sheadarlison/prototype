@@ -51,44 +51,31 @@
 				</div>
 				<div class="logo-color-picker">
 					<h4>Add your logo</h4>
-					<input class="primary-button"type="button" value="Upload Logo" onclick="brandingOn()">
+					<input class="primary-button"type="button" value="Upload Logo" onclick="logoOn()">
 					<input class="secondary-button" type="button" value="Select from Storage">
 					<h4>Pick up to three colors</h4>
 					<ul>
-						<li>Base: <input class="color-picker" type="color" value="#e66465"></li>
+						<li>Base: <input id="base-color" class="color-picker" type="color" value="#e66465"></li>
 						<li>Accents: <input class="color-picker" type="color" value="#f6b73c"></li>
-						<li>Primary Text: <input class="color-picker" type="color" value="#ffffff"></li>
+						<li>Primary Text: <input id="primary-text" class="color-picker" type="color" value="#ffffff"></li>
 					</ul>
-					<input class="primary-button"type="button" value="Save" onclick="backButton()">
+					<input class="primary-button"type="button" value="Save" onclick="saveBranding()">
 				</div>
 			</div>
 
-			<!-- Component Settings -->
-			<div class="component-settings">
-				<!-- <div class="component-settings-header">
-					<i class="arrow left"></i><input class="back-button"type="button" value="Back" onclick="backButton()">
-					<h3 class="brand-settings-title">Brand Settings</h3>
-				</div>
-				<div class="logo-color-picker">
-					<h4>Add your logo</h4>
-					<input class="primary-button"type="button" value="Upload Logo" onclick="brandingOn()">
-					<input class="secondary-button" type="button" value="Select from Storage">
-					<h4>Pick up to three colors</h4>
-					<ul>
-						<li>Base: <input class="color-picker" type="color" value="#e66465"></li>
-						<li>Accents: <input class="color-picker" type="color" value="#f6b73c"></li>
-						<li>Primary Text: <input class="color-picker" type="color" value="#ffffff"></li>
-					</ul>
-					<input class="primary-button"type="button" value="Save" onclick="backButton()">
-				</div>
-			</div> -->
+			<!-- Component List -->
+			<div id="component-list">
+				<h3 class="brand-settings-button">Brand Settings</h3>
+				<h3 onclick="overrideBranding()">Image - Logo</h3>
+				<h3>Text - Message</h3>
+			</div>
 		</div>
 
 		<!-- Preview starts here -->
 		<div class="preview">
-			<div class="htmlTemplate">
+			<div class="htmlTemplate" id="htmlTemplate">
 				<img id="logo" src="https://storage.googleapis.com/risemedialibrary-7fa5ee92-7deb-450b-a8d5-e5ed648c575f/YourLogo.png">
-				<h1 id="brandText" >Happy Holidays!</h1>
+				<h1 id="brandText">Happy Holidays!</h1>
 			</div>
 		</div>
 	</div>
